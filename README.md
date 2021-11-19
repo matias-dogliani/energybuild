@@ -13,6 +13,8 @@ Predicting the energy consumption of an office building
 
 ### Historical Weather Data 
 
+Website, API explanation 
+
 ### Energy reading 
 
 ### Forecast
@@ -21,18 +23,23 @@ Predicting the energy consumption of an office building
 
 ### Energy Reading 
 
+
 #### Outliers and anomalies 
+
+figure of the distribution and the outliers 
 
 We consider our distribution as a normal gaussian distribution. In order to 
 find the anomalies we took just 4 standar desviation and the elements outside of this limits are considered outliers. 
 
-To replace this outliers we use the `interpolate` function of pandas package. We use the method `ffill` since we had consecutives null values 
+To replace this outliers we use the `interpolate` function of pandas package with the `linear` method 
 
 Also we cast the reading values into a int values. For that, firs we had to delete the units string 'KWh' 
 
 ### Weather 
 
-Completing the missing data with interpolate ffil.... 
+In order to have the same timestamps of the weather data and the energy reading we've used `pandas.merge()` function. 
+Then, we replace the missing values with the `interpolate` function 
+
 
 
 
