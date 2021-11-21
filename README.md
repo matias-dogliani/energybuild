@@ -41,7 +41,16 @@ In order to have the same timestamps of the weather data and the energy reading 
 Then, we replace the missing values with the `interpolate` function 
 
 
+## Model comparision 
 
+### Linear Regression 
+
+### Tree decision regression 
+
+### SVR regressor 
+
+
+### MLVR neural network 
 
 
 
