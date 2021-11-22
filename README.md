@@ -41,6 +41,8 @@ with free access to download an hourly Forecast 4 days data set
 
 ## Data pre processing 
 
+In this [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/master/PreProcess_EnergyConsumption.ipynb) is an step by step explanation of the pre processing 
+
 ### Energy Reading 
 
 The distribution of our data: 
