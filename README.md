@@ -2,6 +2,8 @@
 
 Predicting the energy consumption of an office building
 
+[Presentation Slides](https://github.com/matias-dogliani/energybuild/blob/master/Slides/Machine%20Learning%20-%20Energy%20Prediction.pptx.pdf)
+
 ### Group : 
 
 * Calixto, Ian 
