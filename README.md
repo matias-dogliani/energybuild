@@ -48,10 +48,27 @@ In this [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/m
 The distribution of our data: 
 ![Energy usage: histogram](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_histogram.png)
 
+Pre processing consisted on: 
+
+* Removing the string unit from the target variable 
+
+* Overview analysis of data with plots 
+
+* Find anomalies 
+
+* Replace the anomalies with NaN values 
+
+* Interpolate the NaN values 
+
 
 #### Outliers and anomalies 
 
-Explanation pendent..
+![Energy Usage: finiding anomalies](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_year_annotated.png)
+
+
+
+
+
 
 ### Weather 
 
