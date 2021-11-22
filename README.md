@@ -94,6 +94,8 @@ Then, we replace the missing values with the `interpolate` function as we did in
 ## Model comparision 
 
 In this [Jupyter Notebook](https://github.com/matias-dogliani/energybuild/blob/master/Training_Testing_model.ipynb)
+the models are trained and test. At last, we used the Tree Decision Regressor (the one which the best result ) 
+to predict the energy consumption of 4 days in the future. 
 
 We tried 4 different models. All of them with default hyperparameters 
 
