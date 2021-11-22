@@ -93,7 +93,7 @@ Then, we replace the missing values with the `interpolate` function as we did in
 
 ## Model comparision 
 
-In this [Jupyter Notebook] 
+In this [Jupyter Notebook](https://github.com/matias-dogliani/energybuild/blob/master/Training_Testing_model.ipynb)
 
 We tried 4 different models. All of them with default hyperparameters 
 
