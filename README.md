@@ -2,7 +2,7 @@
 
 Predicting the energy consumption of an office building
 
-#Group : 
+### Group : 
 
 * Calixto, Ian 
 * Doblas Florido, Maria Angeles
@@ -11,13 +11,30 @@ Predicting the energy consumption of an office building
 
 ## Data Acquisition 
 
+The [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/master/DataSet_Weather.ipynb) 
+contains all code used to acquire and to save the data frames, and a brief step by step explanation
+
 ### Historical Weather Data 
 
-Website, API explanation 
+For training and testing the model we use the historical  weather data related to our energy consumption data provided.
+We've  use the API provided by [AT-Wetter](http://at-wetter.tk/index.php?men=api)
+
+This API don't need a Key or other autentication. It's located on the AT-Server in `http://at-wetter.tk/api/v1/.` 
+and the instruction to use it are in their [website](http://at-wetter.tk/index.php?men=api) 
+
+The data downloaded for the same datapoints of the energy consumptions: 
+
+![Temperature: Yearly](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Weather_year.png)
 
 ### Energy reading 
 
+This dataset was provided by the Professor. 
+
 ### Forecast
+
+For the final prediction of the energy consumption, we use the [OpenWeather - API](https://openweathermap.org/api)
+with free access to download an hourly Forecast 4 days data set
+
 
 ## Data pre processing 
 
