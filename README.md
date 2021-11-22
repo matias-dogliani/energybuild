@@ -11,7 +11,7 @@ Predicting the energy consumption of an office building
 
 ## Data Acquisition 
 
-The [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/master/DataSet_Weather.ipynb) 
+This [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/master/DataSet_Weather.ipynb) 
 contains all code used to acquire and to save the data frames, and a brief step by step explanation
 
 ### Historical Weather Data 
@@ -30,6 +30,9 @@ The data downloaded for the same datapoints of the energy consumptions:
 
 This dataset was provided by the Professor. 
 
+
+![Energy usage: yearly](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_year.png)
+
 ### Forecast
 
 For the final prediction of the energy consumption, we use the [OpenWeather - API](https://openweathermap.org/api)
@@ -40,17 +43,13 @@ with free access to download an hourly Forecast 4 days data set
 
 ### Energy Reading 
 
+The distribution of our data: 
+![Energy usage: histogram](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_histogram.png)
+
 
 #### Outliers and anomalies 
 
-figure of the distribution and the outliers 
-
-We consider our distribution as a normal gaussian distribution. In order to 
-find the anomalies we took just 4 standar desviation and the elements outside of this limits are considered outliers. 
-
-To replace this outliers we use the `interpolate` function of pandas package with the `linear` method 
-
-Also we cast the reading values into a int values. For that, firs we had to delete the units string 'KWh' 
+Explanation pendent..
 
 ### Weather 
 
@@ -66,9 +65,9 @@ Then, we replace the missing values with the `interpolate` function
 
 ### SVR regressor 
 
-
 ### MLVR neural network 
 
 
+## Predicting 
 
 
