@@ -63,29 +63,56 @@ Pre processing consisted on:
 
 #### Outliers and anomalies 
 
+
+To detect the anomalies we've used a rule based method. We fix these rules after a visual analisys of our data. 
+
+We've consider an anomalie the: 
+
+* Negative Values
+* Zero Values
+* Illogical Values (too high
+or too low)
+
+The upper limit was set to 4  of the median value and the lower limit to 0.3 of the median to 0.3 of the median. Both limits, and the median are in the plot  
+
 ![Energy Usage: finiding anomalies](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_year_annotated.png)
 
-
-
-
-
+Once we've detected the outliers, with use the built-in function `interpolate()` of pandas to **replace** those values. 
 
 ### Weather 
 
-In order to have the same timestamps of the weather data and the energy reading we've used `pandas.merge()` function. 
-Then, we replace the missing values with the `interpolate` function 
+We did not implement pre process on our data since we could not find, with visual analisys, any clearly outlier. In further work, we'll implement *gradient detection outlier* 
 
+We did implemented a linear interpolation for the missin values of temperature data.
+When we merged the Temperature data frame with the energy consumption data set, we realized that 
+some points of temperature were missing (the data wasn't hourly stamped in some ranges). 
+
+To have the same timestamps of the weather data and the energy reading we've used `pandas.merge()` 
+function. 
+Then, we replace the missing values with the `interpolate` function as we did in the energy consumption dataframe 
 
 ## Model comparision 
 
+We tried 4 different models. All of them with default hyperparameters 
+
+
+Missing picture of R2 comparing 
 ### Linear Regression 
+
+![Linear Reg : scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/linear_regression_model.png)
+
 
 ### Tree decision regression 
 
+![Tree decision Reg : scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/tree_regressor_model.png)
+
 ### SVR regressor 
+  
+![SVR regressor : scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/SVLR_regressor_model.png)
 
-### MLVR neural network 
+### MLPR neural network 
 
+![MLPR: scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/MLPR_regressor_model.png)
 
 ## Predicting 
 
