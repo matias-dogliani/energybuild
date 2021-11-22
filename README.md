@@ -64,7 +64,7 @@ Pre processing consisted on:
 #### Outliers and anomalies 
 
 
-To detect the anomalies we've used a rule based method. We fix these rules after a visual analisys of our data. 
+To detect the anomalies we've used a rule based method. We fixed these rules after a visual analisys of our data. 
 
 We've consider an anomalie the: 
 
@@ -93,8 +93,9 @@ Then, we replace the missing values with the `interpolate` function as we did in
 
 ## Model comparision 
 
-We tried 4 different models. All of them with default hyperparameters 
+In this [Jupyter Notebook] 
 
+We tried 4 different models. All of them with default hyperparameters 
 
 Missing picture of R2 comparing 
 ### Linear Regression 
@@ -116,4 +117,5 @@ Missing picture of R2 comparing
 
 ## Predicting 
 
+missing High Q plots 
 
