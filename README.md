@@ -119,6 +119,10 @@ Missing picture of R2 comparing
 
 ![MLPR: scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/MLPR_regressor_model.png)
 
+### Models' Perfomance 
+
+![Model perfomance](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Model_perfomance.png)
+
 ## Predicting 
 
 missing High Q plots 
