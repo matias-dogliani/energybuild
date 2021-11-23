@@ -125,6 +125,8 @@ Missing picture of R2 comparing
 
 ## Predicting 
 
+[Jupyter Notebook](https://github.com/matias-dogliani/energybuild/blob/master/Training_Testing_model.ipynb)
+
 We used Tree Decision Regression model to predict the energy consumption up to 4 days in the future 
 matching the maximum forecast data with free acces API. 
 
