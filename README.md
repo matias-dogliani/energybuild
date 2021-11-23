@@ -125,5 +125,11 @@ Missing picture of R2 comparing
 
 ## Predicting 
 
-missing High Q plots 
+We used Tree Decision Regression model to predict the energy consumption up to 4 days in the future 
+matching the maximum forecast data with free acces API. 
 
+* Four days predictions
+![4 days predictions](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_consumption_pred_4days.png)
+
+* One day prediction 
+![1 day prediction]()
