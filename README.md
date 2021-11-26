@@ -93,6 +93,15 @@ To have the same timestamps of the weather data and the energy reading we've use
 function. 
 Then, we replace the missing values with the `interpolate` function as we did in the energy consumption dataframe 
 
+### Week days and holidays 
+
+Link a Jupyter a notebook 
+
+Cyclical variables explanation 
+
+Plot sin vs cosine 
+
+
 ## Model comparision 
 
 In this [Jupyter Notebook](https://github.com/matias-dogliani/energybuild/blob/master/Training_Testing_model.ipynb)
