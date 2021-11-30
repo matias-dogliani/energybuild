@@ -75,7 +75,7 @@ We've consider an anomalie the:
 * Illogical Values (too high
 or too low)
 
-The upper limit was set to 4  of the median value and the lower limit to 0.3 of the median to 0.3 of the median. Both limits, and the median are in the plot  
+The upper limit was set to 4  of the median value and the lower limit to 0.3 of the median. Both limits, and the median are in the plot  
 
 ![Energy Usage: finiding anomalies](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_year_annotated.png)
 
