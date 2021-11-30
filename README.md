@@ -95,12 +95,29 @@ Then, we replace the missing values with the `interpolate` function as we did in
 
 ### Week days and holidays 
 
-Link a Jupyter a notebook 
+In this [Jupyter Notebook](https://github.com/matias-dogliani/energybuild/blob/master/DataSet_Days.ipynb) there's a deeper explanation and the step by step code. 
 
-Cyclical variables explanation 
+In order to identify the week days, first we had to give a numerical value from 0 to 6 to each day of the week (0 for Monday  and 6 for Sunday). 
 
-Plot sin vs cosine 
+Besides, We need to have the same difference rate between consecutive days so it is  necessary to use a **cyclical function**.
 
+* First, we normalized the week days (0-6) between 0 and 2π. 
+
+* After this, we used the sin and the cosine function in all our normalized values 
+  (we used sin and cosine so every day of the week would have an unique combination).
+  We used these two values as input variables. 
+
+If we plot each sin and cosine value, we observe that it is a cyclical function **with the same distance between consecutives dots** 
+(the dots represent the days of the week).
+
+![WeekDays plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/weekdays.png)
+
+
+* To acquire the holidays data set we had to install and import the holidays package. 
+
+
+* After this, we assigned a **1 to the holidays and a 0 to the regular days**. 
+  We used this information (zeros and ones) as another imput.
 
 ## Model comparision 
 
