@@ -69,9 +69,9 @@ The first step in determining the outliers was to determine the distribution of 
 
 ![Energy Usage: histogram gaussian](https://github.com/matias-dogliani/energybuild/blob/6162874ae86ef0e9ff237c859536721e82ba2ff8/Imgs/Energy_usage_histogram_gaussian.png)
 
-As shown in the aboven histogram comparison to a normal distribution, our data was determined to not have a non-normal distribution. Therefore, we could not use a standard deviation method to detect anamolies.
+As shown in the aboven histogram comparison to a normal distribution, our data was determined to have a non-normal distribution. Therefore, we could not use a standard deviation method to detect anamolies.
 
-Rather, we used a rule-based method. We fixed these rules after a visual analisys of our data, as well as real world understanding of the data measurements.
+Rather, we used a **rule-based method**. We fixed these rules after a visual analisys of our data, as well as real world understanding of the data measurements.
 
 We have defined outliers as:
 
@@ -132,7 +132,6 @@ to predict the energy consumption for 4 days in the future.
 
 We tried 4 different models, all of them with default hyperparameters
 
-Missing picture of R2 comparing
 ### Linear Regression
 
 ![Linear Reg : scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/linear_regression_model.png)
@@ -170,11 +169,17 @@ matching the maximum forecast data with the free access API.
 ## Conclusion
 
 In order to predict the future energy usage of a building using machine learning, a data set of historical energy usage was given. 
-This data set had to be preprocessed before it could be useful. The major steps of preprocessing included cleaning the data, analysing the data, and detecting and replacing outliers.
+This data set had to be **preprocessed**  before it could be useful. The major steps of preprocessing included cleaning the data, analysing the data, and detecting and replacing outliers.
 We then determined the inputs of the data for the machine learning model.
-Our inputs were energy usage, weekdays, holidays, and weather.
+Our inputs were **energy usage, weekdays, holidays, and weather.**
+
+
 Historical weather data corresponding to the time of our data was retrieved via API to interface with our data. 
 This weather data was also preprocessed. Next, the model was trained and tested with 4 different models. 
-After analysis of each model and it was determined that the Tree Decision Regressor produced the best results for our use case, yileding an R2 value of 0.89. 
+
+
+After analysis of each model it was determined that the **Tree Decision Regressor** produced the best results for our use case, yileding an R2 value of 0.89. 
 The Tree Decision Regressor was used to forecast the next 4 days of energy usage. 
+
+
 The 4 day forecast produced results that our group determined to be a reasonable prediction, validating the success of our model. 
