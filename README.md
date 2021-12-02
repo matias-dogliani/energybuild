@@ -71,9 +71,9 @@ The first step in determining the outliers was to determine the distribution of 
 
 ![Energy Usage: histogram gaussian](https://github.com/matias-dogliani/energybuild/blob/6162874ae86ef0e9ff237c859536721e82ba2ff8/Imgs/Energy_usage_histogram_gaussian.png)
 
-As shown in the aboven histogram comparison to a normal distribution, our data was determined to have a non-normal distribution. Therefore, we could not use a standard deviation method to detect anamolies.
+As shown in the above histogram comparison to a normal distribution, our data was determined to have a non-normal distribution. Therefore, we could not use a standard deviation method to detect anamolies.
 
-Rather, we used a **rule-based method**. We fixed these rules after a visual analisys of our data, as well as real world understanding of the data measurements.
+Rather, we used a **rule-based method**. We fixed these rules after a visual analysis of our data, as well as real world understanding of the data measurements.
 
 We have defined outliers as:
 
@@ -117,7 +117,7 @@ If we plot each combination of sin and cosine value, we observe that it is a cyc
 
 ### Weather
 
-We did not implement pre-process on our data since we could not find, with visual analysis, any clear outlier. For a more detailed detection of outliers in further work, we can implement *gradient detection outlier*
+We did not implement anomalies detection on our data since we could not find, with visual analysis, any clear outlier. For a more detailed detection of outliers in further work, we can implement *gradient detection outlier*
 
 We implemented a linear interpolation for the missing values of temperature data.
 When we merged the Temperature data frame with the energy consumption data set, we realized that
@@ -186,7 +186,7 @@ matching the maximum forecast data with the free access API.
 In order to predict the future energy usage of a building using machine learning, a data set of historical energy usage was given. 
 This data set had to be **preprocessed**  before it could be useful. The major steps of preprocessing included cleaning the data, analysing the data, and detecting and replacing outliers.
 We then determined the inputs of the data for the machine learning model.
-Our inputs were **energy usage, weekdays, holidays, and weather.**
+Our inputs were **weekdays, holidays, and temperature.** and our target variables was **energy usage**. 
 
 
 Historical weather data corresponding to the time of our data was retrieved via API to interface with our data. 
