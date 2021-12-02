@@ -156,7 +156,7 @@ We tried 4 different models, all of them with default hyperparameters
 
 We choose the model with the best perfomance for our use case based on these perfmonace measurements: 
 
-* $`R^2`$ : Coefficient of determination. Represents the proportion of the variance in the dependent variable 
+* `$R^2$` : Coefficient of determination. Represents the proportion of the variance in the dependent variable 
 that the independent variables (our inputs variables) explain collectively. It's a measure that indicates how well 
 our model fit.  
 
