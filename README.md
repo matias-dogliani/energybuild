@@ -186,7 +186,7 @@ matching the maximum forecast data with the free access API.
 In order to predict the future energy usage of a building using machine learning, a data set of historical energy usage was given. 
 This data set had to be **preprocessed**  before it could be useful. The major steps of preprocessing included cleaning the data, analysing the data, and detecting and replacing outliers.
 We then determined the inputs of the data for the machine learning model.
-Our inputs were **weekdays, holidays, and temperature.** and our target variables was **energy usage**. 
+Our inputs were **weekdays, holidays, and temperature** and our target variables was **energy usage**. 
 
 
 Historical weather data corresponding to the time of our data was retrieved via API to interface with our data. 
