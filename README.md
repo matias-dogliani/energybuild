@@ -1,5 +1,7 @@
 # Energy Usage of an office building
 
+**Big Data and Digital Modelling** - Priv.Doz. Dr. techn. Mag. MA MA Gerald Schweiger
+
 Predicting the energy consumption of an office building
 
 [Presentation Slides](https://github.com/matias-dogliani/energybuild/blob/master/Slides/Machine%20Learning%20-%20Energy%20Prediction.pptx.pdf)
@@ -43,12 +45,10 @@ with free access to download an hourly Forecast for 4 days
 
 ## Data pre processing
 
-In this [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/master/PreProcess_EnergyConsumption.ipynb) is an step by step explanation of the pre processing
 
 ### Energy Reading
 
-The distribution of our data:
-![Energy usage: histogram](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_histogram.png)
+In this [jupyter notebook](https://github.com/matias-dogliani/energybuild/blob/master/PreProcess_EnergyConsumption.ipynb) is an step by step explanation of the pre processing
 
 Pre-processing consisted of:
 
@@ -62,6 +62,8 @@ Pre-processing consisted of:
 
 * Interpolate the NaN values
 
+The distribution of our data:
+![Energy usage: histogram](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Energy_usage_histogram.png)
 
 #### Outliers and anomalies
 
@@ -86,17 +88,6 @@ We defined illogical values with upper and lower limits. The upper limit was set
 
 Once we've detected the outliers, we use the built-in function `interpolate()` of pandas to **replace** those values.
 
-### Weather
-
-We did not implement pre-process on our data since we could not find, with visual analysis, any clear outlier. For a more detailed detection of outliers in further work, we can implement *gradient detection outlier*
-
-We implemented a linear interpolation for the missing values of temperature data.
-When we merged the Temperature data frame with the energy consumption data set, we realized that
-some points of temperature were missing (the data wasn't hourly stamped in some ranges).
-
-To have the same timestamps of the weather data and the energy reading we've used `pandas.merge()`
-function.
-Then, we replace the missing values with the `interpolate` function as we did in the energy consumption dataframe
 
 ### Week days and holidays
 
@@ -124,6 +115,18 @@ If we plot each combination of sin and cosine value, we observe that it is a cyc
 * After this, we assigned a **1 to the holidays and a 0 to the regular days**.
   We used this information (zeros and ones) as another imput.
 
+### Weather
+
+We did not implement pre-process on our data since we could not find, with visual analysis, any clear outlier. For a more detailed detection of outliers in further work, we can implement *gradient detection outlier*
+
+We implemented a linear interpolation for the missing values of temperature data.
+When we merged the Temperature data frame with the energy consumption data set, we realized that
+some points of temperature were missing (the data wasn't hourly stamped in some ranges).
+
+To have the same timestamps of the weather data and the energy reading we've used `pandas.merge()`
+function.
+Then, we replace the missing values with the `interpolate` function as we did in the energy consumption dataframe
+
 ## Model comparision
 
 In this [Jupyter Notebook](https://github.com/matias-dogliani/energybuild/blob/master/Training_Testing_model.ipynb)
@@ -150,6 +153,18 @@ We tried 4 different models, all of them with default hyperparameters
 ![MLPR: scatter plot](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/MLPR_regressor_model.png)
 
 ### Models' Perfomance
+
+We choose the model with the best perfomance for our use case based on these perfmonace measurements: 
+
+* $R^2$ : Coefficient of determination. Represents the proportion of the variance in the dependent variable 
+that the independent variables (our inputs variables) explain collectively. It's a measure that indicates how well 
+our model fit.  
+
+* $MAE$ : Mean Absolute Error. Represents the **average**  of the **absolute difference**  between the actual and predicted values 
+
+* $RMS$ : Root Mean Squared Error. Represents the standard deviation of residuals.  
+
+[source](https://medium.com/analytics-vidhya/mae-mse-rmse-coefficient-of-determination-adjusted-r-squared-which-metric-is-better-cd0326a5697e)
 
 ![Model perfomance](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Model_perfomance.png)
 
