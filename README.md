@@ -156,13 +156,13 @@ We tried 4 different models, all of them with default hyperparameters
 
 We choose the model with the best perfomance for our use case based on these perfmonace measurements: 
 
-* $R^2$ : Coefficient of determination. Represents the proportion of the variance in the dependent variable 
+* $`R^2`$ : Coefficient of determination. Represents the proportion of the variance in the dependent variable 
 that the independent variables (our inputs variables) explain collectively. It's a measure that indicates how well 
 our model fit.  
 
-* $MAE$ : Mean Absolute Error. Represents the **average**  of the **absolute difference**  between the actual and predicted values 
+* $`MAE`$ : Mean Absolute Error. Represents the **average**  of the **absolute difference**  between the actual and predicted values 
 
-* $RMS$ : Root Mean Squared Error. Represents the standard deviation of residuals.  
+* $`RMS`$ : Root Mean Squared Error. Represents the standard deviation of residuals.  
 
 [source](https://medium.com/analytics-vidhya/mae-mse-rmse-coefficient-of-determination-adjusted-r-squared-which-metric-is-better-cd0326a5697e)
 
