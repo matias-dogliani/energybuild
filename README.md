@@ -5,6 +5,8 @@
 Predicting the energy consumption of an office building
 
 [Presentation Slides](https://github.com/matias-dogliani/energybuild/blob/master/Slides/Machine%20Learning%20-%20Energy%20Prediction.pptx.pdf)
+
+
 [Paper](https://github.com/matias-dogliani/energybuild/blob/master/Energy_consumption_EI.pdf)
 
 ### Authors :
