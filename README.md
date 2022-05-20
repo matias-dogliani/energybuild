@@ -50,6 +50,15 @@ Predicting the energy consumption of an office building
 
 * [Features data set building and ML testing](https://github.com/matias-dogliani/energybuild/blob/master/Notebooks/Training_Testing_model.ipynb)
 
+## Models
+
+4 Models were tested and compared. 
+
+![Models output](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/ModelComp.png) 
+
+### Perfomance comaparison
+
+![Models perfomance analysis](https://github.com/matias-dogliani/energybuild/blob/master/Imgs/Model_perfomance.png)
 
 ## Energy consumption prediction 
 
